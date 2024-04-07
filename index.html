@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Chat App</title>
+  </head>
+  <body>
+    <div id="videos">
+      <video class="video-player" id="user-1" autoplay playsinline></video>
+      <video class="video-player" id="user-2" autoplay playsinline></video>
+    </div>
+
+    <div class="connections">
+      <div class="offer">
+        <button id="create-offer">Create Offer</button>
+        <label for="offer">SDP Offer</label>
+        <textarea name="offer" id="offer-sdp"></textarea>
+      </div>
+
+      <div class="answer">
+        <button id="create-answer">Create Answer</button>
+        <label for="answer">SDP Answer</label>
+        <textarea name="answer" id="answer-sdp"></textarea>
+      </div>
+
+      <button id="add-answer">Add Answer</button>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
